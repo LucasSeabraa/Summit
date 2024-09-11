@@ -8,28 +8,28 @@ import { Loading } from "@/components/loading"
 
 import{
     useFonts,
-    Inter_500Medium,
-    Inter_400Regular,
-    Inter_600SemiBold,
-} from "@expo-google-fonts/inter"
+    Roboto_500Medium,
+    Roboto_400Regular,
+    Roboto_700Bold,
+} from "@expo-google-fonts/roboto"
 
 export default function Layout(){
 
-    const [fotnsLoaded] = useFonts({
-        Inter_500Medium,
-        Inter_400Regular,
-        Inter_600SemiBold,
+    const [fontsLoaded] = useFonts({
+        Roboto_500Medium,
+        Roboto_400Regular,
+        Roboto_700Bold,
     })
 
-    if (!fotnsLoaded) {
+    if (!fontsLoaded) {
         return <Loading />
     }
 
     return (
-    <View className="flex-1 bg-summer-100">
+    <View className="flex-1 bg-green-500">
 
         <StatusBar 
-        barStyle="dark-content"
+        barStyle="light-content"
         backgroundColor="transparent"
         translucent
         />
